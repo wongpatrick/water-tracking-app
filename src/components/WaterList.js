@@ -1,9 +1,10 @@
 import React from "react";
 
-function WaterList(data) {
-  console.log(data)
+function WaterList(waterState) {
   const handleDelete = (index,e) => {
-    data.setWaterTable(data.waterData.filter((v, i) => i !== index));
+    let waterData = waterState.waterData.filter((v, i) => i !== index)
+    waterState.setWaterTable(waterData);
+    localStorage.setItem("waterData", JSON.stringify(waterData));
   }
 
   return (
@@ -18,7 +19,7 @@ function WaterList(data) {
           </tr>
         </thead>
         <tbody>
-          {data.waterData.map((data, index) => (
+          {waterState.waterData.map((data, index) => (
             <tr key={index}>
               <td>{data.date}</td>
               <td>{data.intake}</td>

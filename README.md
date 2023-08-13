@@ -27,3 +27,4 @@ The app is extremely bare bones so there are a lot to be desire. A few things to
 - having a daily goal is ideal
 - tracking % is left for daily
 - cleaning up the code
+- Introduce redux for cross component states (over complicated for this project but to help me understand it better)
