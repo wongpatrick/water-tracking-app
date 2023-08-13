@@ -26,4 +26,4 @@ The app is extremely bare bones so there are a lot to be desire. A few things to
 - the table doesn't scroll so that needs to be fixed.
 - having a daily goal is ideal
 - tracking % is left for daily
-- removing an entry
+- cleaning up the code

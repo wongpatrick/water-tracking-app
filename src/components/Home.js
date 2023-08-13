@@ -18,6 +18,7 @@ function Home() {
         <div className="col-md-6">
           <WaterList 
             waterData = {waterData}
+            setWaterTable = {setWaterTable}
           />
         </div>
       </div>
